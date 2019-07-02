@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nomor Hape:   "></TextView>
+
+        <EditText
+            android:id="@+id/editText_num"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:phoneNumber="true"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengk:       "></TextView>
+
+        <EditText
+            android:id="@+id/editText_name"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:ems="10">
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/but_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="but_inClick"
+            android:text="Tambah"></Button>
+
+        <Button
+            android:id="@+id/but_Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="but_EditClick"
+            android:text="Edit"></Button>
+
+        <Button
+            android:id="@+id/but_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="but_DelClick"
+            android:text="Hapus"></Button>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DATA PHONEBOOK:"></TextView>
+
+    <ListView
+        android:id="@+id/ListView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>
